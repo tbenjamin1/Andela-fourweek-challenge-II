@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300, 600, 700;
+}
+
+.container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 10rem auto;
+  align-content: center;
+  width: 60%;
+  height: 30rem;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0px 8px 20px 0px rgba(46, 31, 31, 0.2);
+  border-radius: 10px;
+
+  /* justify-content: space-around; */
+}
+h1,
+h2 {
+  text-align: center;
+  color: hsl(209, 33%, 12%);
+
+  font-size: 15px;
+}
+small {
+  color: hsl(223, 87%, 63%);
+}
+strong {
+  color: hsl(0, 0%, 59%);
+}
+p {
+  text-align: center;
+  font-size: 10px;
+  color: hsl(0, 0%, 59%);
+}
+.FORM {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-gap: 20px;
+  max-width: 80%;
+
+  height: 5rem;
+
+  padding: 2px;
+  position: relative;
+  margin-left: 5rem;
+}
+.FORM input {
+  height: 2rem;
+  width: 10rem;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 4rem;
+}
+.FORM button {
+  border: none;
+  height: 2rem;
+  width: 10rem;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(223, 100%, 88%);
+}
+.container-img {
+  justify-content: space-around;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.container-img img {
+  width: 90%;
+  height: 10rem;
+}
+
+#message {
+  float: left;
+
+  font-size: 10px;
+  padding: 5px;
+}
+
+.success input {
+  border-color: #2ecc71;
+}
+
+.error input {
+  border-color: #e74c3c;
+}
+.social-meadia {
+  margin-top: 2rem;
+  align-items: center;
+  padding-left: 10rem;
+}
+.fab {
+  color: hsl(223, 87%, 63%);
+}
+.fab:hover {
+  color: hsl(223, 91%, 32%);
+}
+@media only screen and (max-width: 320px) { 
+  .container {
+    display: grid;
+    grid-template-columns: 100px;
+    
+    padding: 1px;
+  }
+  h1,
+  h2 {
+    text-align: center;
+    color: hsl(209, 33%, 12%);
+margin-left: 3rem;
+    font-size: 8px;
+    margin-top: 5px;
+  }
+  p{
+    text-align: center;
+    margin-left: 3rem;
+    font-size: 6px;
+}
+
+  .FORM {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 80px  ;
+    max-width: 10rem;
+   
+    height: 3rem;
+    margin-left: 3rem;
+    
+    position: relative;
+  
+  }
+  .FORM input {
+    height: 1rem;
+    width: 5rem;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 3rem;
+    font-size: 5px;
+  }
+  .FORM button {
+    border: none;
+    height: 1rem;
+    width: 5rem;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 3rem;
+    font-size: 5px;
+    cursor: pointer;
+  }
+  #message {
+    
+  
+    font-size: 4px;
+    padding: 5px;
+  }
+  .container-img {
+    
+  width: 10rem;
+    margin-top: 1rem;
+    
+    margin-left: 1rem;
+  }
+  
+  .container-img img {
+    max-width: 9rem;
+    height: 7rem;
+    
+  }
+  .social-meadia {
+    margin-top: 2rem;
+    padding:  30px;
+    align-items: center;
+    margin-left: 3rem;
+    width: 7rem;
+
+  }
+  .social-meadia p{
+     text-align: center;
+     margin-left: 1px;
+  }
+  .fab {
+    color: hsl(223, 87%, 63%);
+  
+    font-size: 15px;
+    
+  }
+  .fab:hover {
+    color: hsl(223, 91%, 32%);
+  }
+}
